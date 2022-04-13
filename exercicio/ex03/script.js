@@ -1,20 +1,19 @@
-function carregar() {
-    var msg = document.getElementById('msg')
-    var img = document.getElementById('imagem')
-    var data = new Date()
-    var hora = data.getHours()
-    msg.innerHTML = `Agora são ${hora} horas`
-    if (hora >= 0 && hora < 12) {
-        // console.log('Bom dia!')
-        img.src = 'imagem/manha.png'
-        document.body.style.background = '#ffe5ab'
-    } else if (hora >= 12 && hora < 18) {
-        // console.log('Boa tarde!')
-        img.src = 'imagem/tarde.png'
-        document.body.style.background = '#cce87a'
+function contar() {
+    let inicio = document.getElementById('txti')
+    let fim = document.getElementById('txtf')
+    let passo = document.getElementById('txtf')
+    let res = document.getElementById('res')
+
+    if(inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        alert('Erro. Faltam dados!')
     } else {
-        // console.log('Boa noite!')
-        img.src = 'imagem/noite.png'
-        document.body.style.background = '#152c3e'
+        res.innerHTML = 'Contando: '
+        let i = Number(inicio.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+
+        for(let c = i; c <= f; c += p) {
+            res.innerHTML += `${c}`
+        }
     }
 }
