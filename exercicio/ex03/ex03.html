@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de exercicio</title>
+    <title>Super computador</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
-        <div id="msg">
-            Testando...
+        <div id="dados">
+            <p>Início: <input type="number" name="inicio" id="txti"></p>
+            <p>Fim: <input type="number" name="fim" id="txtf"></p>
+            <p>Passo: <input type="number" name="passo" id="txtp"></p>
+            <p><input type="button" value="contar" onclick="contar()"></p>
         </div>
-        <div id="foto">
-            <img id="imagem" src="imagem/manha.png" alt="">
+        <div id="res">
+            Preparando a contagem...
         </div>
     </section>
     <footer>
