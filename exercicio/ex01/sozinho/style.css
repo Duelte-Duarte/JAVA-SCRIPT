@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    background-color: aqua;
+    font: normal 15pt Arial;
+}
+header {
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+section {
+    width: 500px;
+    background-color: whitesmoke;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    padding: 15px;
+}
+#agora {
+    text-align: center;
+    padding: 10px;
+}
+#img {
+    text-align: center;
+    padding: 10px;
+}
+footer {
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
