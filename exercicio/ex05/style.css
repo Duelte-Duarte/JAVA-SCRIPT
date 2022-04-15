@@ -19,6 +19,11 @@ section {
     box-shadow: 5px 5px 10px black;
 }
 
+select {
+    width: 150px;
+    margin-top: 50px;
+}
+
 div {
     text-align: center;
     padding: 10px;
